@@ -1,11 +1,13 @@
 export default function compareUsers(user1, user2) {
   if (user1.rating === user2.rating) {
-    const user1Categories = Object.keys(user1).filter(key => key !== 'user_id' && key !== 'rating' && key !== 'total_messages');
-    const user2Categories = Object.keys(user2).filter(key => key !== 'user_id' && key !== 'rating' && key !== 'total_messages');
+    const categories = ["indecency", "insult", "threat"];
 
-    if (user1Categories.length > user2Categories.length) {
+    const user1Total = categories.reduce((total, category) => total + user1[category], 0);
+    const user2Total = categories.reduce((total, category) => total + user2[category], 0);
+
+    if (user1Total > user2Total) {
       return -1;
-    } else if (user1Categories.length < user2Categories.length) {
+    } else if (user1Total < user2Total) {
       return 1;
     } else {
       return 0;
