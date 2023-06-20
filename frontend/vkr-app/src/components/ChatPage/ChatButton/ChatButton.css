@@ -1,0 +1,23 @@
+.chat-button-container {
+  margin-left: 20px;
+}
+
+.chat-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 60px;
+  background-color: #ffffff;
+  color: #1c1c1c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: 2px solid #484949;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.chat-chat {
+
+}

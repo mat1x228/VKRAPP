@@ -1,0 +1,48 @@
+.user-list {
+  padding: 10px;
+  background-color: #1c1c1c;
+  border-radius: 15px;
+}
+
+.user-list h3 {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.user-list-item {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #1c1c1c;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: 2px solid #484949;
+  transition: background-color 0.3s ease;
+}
+
+.user-list-item:hover {
+  background-color: #484949;
+}
+
+.close-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #1c1c1c;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: 2px solid #484949;
+}
+
+.graph-card {
+  background-color: #484949;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}

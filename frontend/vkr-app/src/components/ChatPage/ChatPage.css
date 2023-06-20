@@ -1,0 +1,28 @@
+.chat-page {
+  /* Стили для остальной части страницы */
+  margin-top: 20px; /* Отступ сверху */
+  margin-left: 20px; /* Отступ слева */
+  margin-right: 20px; /* Отступ справа */
+  margin-bottom: 20px; /* Отступ снизу */
+}
+
+.chat-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 20px; /* Отступ слева */
+}
+
+.chat-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px; /* Увеличенная ширина кнопки */
+  height: 60px; /* Увеличенная высота кнопки */
+  margin-right: 10px; /* Отступ между кнопками */
+  background-color: #1c1c1c; /* Цвет фона кнопки */
+  color: #ffffff; /* Цвет текста кнопки */
+  border: 1px solid #484949; /* Аутлайн кнопки */
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -17,10 +17,10 @@ bot.on('message', (msg) => {
   const username = msg.from.username;
   const message = msg.text;
 
-  // const conferenceId = '<conference_id>';
+  const conferenceId = 'test_conf';
   const url = `${apiURL}${conferenceId}/append`;
   const data = {
-    token: 'YOUR_SERVER_TOKEN',
+    token: '0b8d3565-53a5-4966-a3d8-edd2fa745369',
     user_id: userId,
     user_name: username,
     message: message

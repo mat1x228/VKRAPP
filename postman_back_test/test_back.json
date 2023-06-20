@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "196b1764-504a-4222-a4c0-1976ade5e362",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22266990"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:5000/stats/mark_conference/append",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY4NzAzMTYwNCwianRpIjoiOWNiN2ZmNDYtZTI2OS00MzAxLThiMjktNjYzNjkxYWYxMzcxIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hcmsiLCJuYmYiOjE2ODcwMzE2MDQsImV4cCI6MTY4NzAzMjUwNH0.V16jiVtM5LU2OkW5doCtf_audTHUg1CXLcDkfe_-2Gg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_id\": 2,\n    \"user_name\": \"ugly\",\n    \"message\": \"hate you\",\n    \"token\": \"0b8d3565-53a5-4966-a3d8-edd2fa745369\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/stats/mat_conference/append",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"stats",
+						"mark_conference",
+						"append"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/stats/mat_conference",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY4NzAzMTYwNCwianRpIjoiOWNiN2ZmNDYtZTI2OS00MzAxLThiMjktNjYzNjkxYWYxMzcxIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hcmsiLCJuYmYiOjE2ODcwMzE2MDQsImV4cCI6MTY4NzAzMjUwNH0.V16jiVtM5LU2OkW5doCtf_audTHUg1CXLcDkfe_-2Gg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/stats/mat_conference",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"stats",
+						"mark_conference"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"login\": \"mat\",\n    \"password\": \"pass\",\n    \"do_register\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY4NzAzMzA4NSwianRpIjoiY2MyMzNlYmUtYWJkNS00MDM5LWE1YmEtZGU2NmE2MTBlZTY4IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hcmsiLCJuYmYiOjE2ODcwMzMwODUsImV4cCI6MTY4NzAzMzk4NX0.GM8K3PqdBdnvy4ivPPFM6CL79nTYuVvd_gvaz3X0yHA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/token",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

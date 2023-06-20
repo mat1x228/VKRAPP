@@ -27,11 +27,11 @@ client.on('message', (message) => {
 
     axios.post(url, data)
       .then(() => {
-        message.channel.send('Сообщение успешно отправлено на сервер');
+        message.channel.send('Succ');
       })
       .catch((error) => {
-        console.error('Ошибка при отправке сообщения на сервер:', error);
-        message.channel.send('Ошибка при отправке сообщения на сервер');
+        console.error('Error:', error);
+        message.channel.send('Error');
       });
   }
 });

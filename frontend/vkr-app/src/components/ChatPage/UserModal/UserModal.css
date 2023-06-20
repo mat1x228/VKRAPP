@@ -1,0 +1,48 @@
+.user-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-modal-content {
+  background-color: #1c1c1c;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 600px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Растягивает контент на всю ширину */
+  height: 100%; /* Растягивает контент на всю высоту */
+  box-sizing: border-box; /* Учитывает padding и border в размерах */
+  overflow: auto; /* Добавляет прокрутку, если контент выходит за пределы окна */
+}
+
+.user-modal h3 {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.user-modal button {
+  margin-top: 20px;
+  background-color: #ffffff;
+  color: #1c1c1c;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.chart-container {
+  margin-top: 20px;
+  width: 100%;
+  flex: 1; /* Используйте flex для растяжения контейнера */
+}
+
